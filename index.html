@@ -89,54 +89,64 @@ php artisan --env
 // -v|vv|vvv 显示更多消息: 1 表示正常输出, 2 表示输出详细信息, 3 表示输出调试信息
 php artisan --verbose OR -v|vv|vvv
 
-// Display the framework change list
-php artisan changes
-// Remove the compiled class file
+// 移除编译类文件
 php artisan clear-compiled
-// Put the application into maintenance mode
+// 将应用置为维护模式
 php artisan down
-// Regenerate framework autoload files
-php artisan dump-autoload
-// Display the current framework environment
+// 显示框架当前环境
 php artisan env
-// Displays help for a command
+// 显示命令帮助
 php artisan help
-// Lists commands
+// 显示名人名言
+php artisan inspire
+// 列出所有命令
 php artisan list
-
-// Optimize the framework for better performance
+// 运行数据库迁移命令
+php artisan migrate
+// 优化框架性能
 php artisan optimize
 // List all registered routes
 php artisan routes
-// Serve the application on the PHP development server
+// 使用 PHP 开发环境服务器为应用提供服务
 php artisan serve
-// Change the default port
-php artisan serve --port 8080
-// Get it to work outside localhost
-php artisan serve --host 0.0.0.0
-// Interact with your application
+// 通过 Tinker 与应用进行交互
 php artisan tinker
-// Bring the application out of maintenance mode
+// 取消应用的维护模式
 php artisan up
-// Create a new package workbench
-php artisan workbench
 
-// Publish a package's assets to the public directory
-php artisan asset:publish [--bench[="vendor/package"]] [--path[="..."]] [package]
-// Create a migration for the password reminders table
-php artisan auth:reminders-table
-// Flush the application cache
+// 设置应用命名空间
+php artisan app:name
+
+// 清空过期的密码重置令牌
+php artisan auth:clear-resets
+
+// 清空应用缓存
 php artisan cache:clear
+// 从缓存中移除条目
+php artisan cache:forget
+// 为缓存数据表创建迁移文件
+php artisan cache:table
+
+// 为配置文件创建缓存
+php artisan config:cache
+// 移除配置缓存文件
+php artisan config:clear
+
+// 通过记录填充数据库
+php artisan db:seed
+
+// 基于注册信息生成缺失的事件和监听器
+php artisan event:generate
+
+// 设置应用key
+php artisan key:generate
+
 // Create a new Artisan command (L3:task)
 php artisan command:make name [--command[="..."]] [--path[="..."]] [--namespace[="..."]]
 // Publish a package's configuration to the application
 php artisan config:publish
 // Create a new resourceful controller
 php artisan controller:make [--bench="vendor/package"]
-// Seed the database with records
-php artisan db:seed [--class[="..."]] [--database[="..."]]
-// Set the application key
-php artisan key:generate
 
 // Database migrations
 php artisan migrate [--bench="vendor/package"] [--database[="..."]] [--path[="..."]] [--package[="..."]] [--pretend] [--seed]
