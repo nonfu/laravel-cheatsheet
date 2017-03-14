@@ -1,6 +1,6 @@
 ## Laravel Cheat Sheet
 
-Finally a cheat sheet for Laravel 4. Keep in mind this is a work in progress and will be fairly dynamic. It will follow the docs closely and I'll try to keep it up to date with new features being added.
+Finally a cheat sheet for Laravel 5. Keep in mind this is a work in progress and will be fairly dynamic. It will follow the docs closely and I'll try to keep it up to date with new features being added.
 
 **Live Version Here:**
 
